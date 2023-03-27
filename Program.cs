@@ -84,7 +84,7 @@ namespace Zn
         {
             
             ["+"] = Add,
-            ["-"] = Substract,
+            ["-"] = Subtract,
             ["x"] = Multiply,
             ["/"] = Div,
             ["%"] = Mod,
@@ -93,7 +93,7 @@ namespace Zn
 
         //Định nghĩa các hàm tương ứng với loại phép toán
         private static double Add(double a, double b) => a + b;
-        private static double Substract(double a, double b) => a - b;
+        private static double Subtract(double a, double b) => a - b;
         private static double Multiply(double a, double b) => a * b;
         private static double Div(double a, double b) => b != 0 ? a / b : throw new DivideByZeroException();
         // Phép chia với trường hợp b = 0: Quăng DivideByZero Exception
